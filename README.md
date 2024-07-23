@@ -1,29 +1,6 @@
-import java.util.Random;
-import java.util.Scanner;
-import java.util.random.*;
-public class Number_Game {
-public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("WELCOME TO THE NUMBER GAME");
-    Random rn = new Random();
-    int number = rn.nextInt(100);
-    System.out.println("Enter the number between 1 to 100");
-    while (number<100) {
-    int user_number = sc.nextInt();
-    if(number == user_number){
-        System.out.println("CONGRATULATIONS! YOU GUESSED THE CORRECT NUMBER <3");
-        break;
-    }
-    else if(number > user_number){
-        System.out.println("ENTER A GREATER NUMBER:");
-    }
-    else if(number < user_number){
-        System.out.println("ENTER A LESSER NUMBER:");
-    }
-    else{
-        System.out.println("INVALID NUMBER");
-    }
-}
-}
-    
-}
+#NUMBER_GAME
+1. Generate a random number within a specified range, such as 1 to 100.
+2. Prompt the user to enter their guess for the generated number.
+3. Compare the user's guess with the generated number and provide feedback on whether the guessis correct, too high, or too low.
+4. Repeat steps 2 and 3 until the user guesses the correct number.
+5. Enjoy the game.
